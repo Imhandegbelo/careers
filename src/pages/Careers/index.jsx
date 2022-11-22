@@ -1,5 +1,4 @@
 import React from 'react';
-// import  {Button}  from '../stories/Button';
 import Button from "../../components/Button"
 import userCheck from '../../assets/user-check.png';
 import code from '../../assets/code.png';
@@ -122,7 +121,7 @@ const Careers = () => {
 					</div>
 				</div>
 				<div>
-					<div className="mx-16 py-8 md:mx-auto">
+					<div className="mx-16 py-8 md:mx-auto md:px-10">
 						<h1 className="text-center text-4xl md:text-5xl font-bold text-[#1849A9] font-normal">
 							JOIN US
 						</h1>
@@ -153,7 +152,7 @@ const Careers = () => {
 						))}
 					</div>
 					<div className="px-5 bg-gray-100 text-center py-4">
-						<p className="text-center mx-auto text-xl md:text-[40px] font-normal pb-6 sm:leading-[50px] max-w-7xl">
+						<p className="text-center mx-auto text-xl md:text-[48px] font-normal pb-6 sm:leading-[50px] max-w-7xl">
 							We are a global company with root spread worldwide, and our team
 							reflects that. The Account Pal team is building the future of AI
 							technology to help improve efficiency and boost productivity.
@@ -165,16 +164,16 @@ const Careers = () => {
 					<h1 className="text-4xl font-normal text-center text-[#1849A9] mx-auto">
 						BENEFITS
 					</h1>
-					<div className="lg:pl-60 pt-2 md:pl-30 pl-10">
+					<div className="md:flex md:flex-col lg:pl-60 pt-2 md:pl-30 pl-10">
 						<span className="inline-flex items-center mt-1">
 							<img src={clock} alt="clock" className="self-center m-2 w-12" />{' '}
-							<span className="text-base md:text-[40px] text-[#101828]">
+							<span className="text-base md:text-[40px] text-[#101828] md:leading-[45px]">
 								Flexi-time and remote working
 							</span>
 						</span>
 						<span className="inline-flex items-center mt-1">
 							<img src={earth} alt="earth" className="self-center m-2 w-12" />{' '}
-							<span className="text-base md:text-[40px] text-[#101828]">
+							<span className="text-base md:text-[40px] text-[#101828] md:leading-[45px]">
 								Opportunity to be part of a world-class team
 							</span>
 						</span>
@@ -184,13 +183,13 @@ const Careers = () => {
 								alt="suitcase"
 								className="self-center m-2 w-12"
 							/>{' '}
-							<span className="text-base md:text-[40px] text-[#101828]">
+							<span className="text-base md:text-[40px] text-[#101828] md:leading-[45px]">
 								Fantastic work culture
 							</span>
 						</span>
 						<span className="inline-flex items-center mt-1">
 							<img src={gift} alt="gift" className="self-center m-2 w-12" />{' '}
-							<span className="text-base md:text-[40px] text-[#101828]">
+							<span className="text-base md:text-[40px] text-[#101828] md:leading-[45px]" >
 								Competitive compensation package and benefits
 							</span>
 						</span>
@@ -204,7 +203,7 @@ const Careers = () => {
 					<div className="px-1 md:px-6 pt-14 grid md:grid-cols-2">
 						{openings.map((opening) => (
 							<div className="flex flex-row mx-2 mt-2 gap-4 md:p-2">
-								<div className="basis-1/6 text-base md:mx-4 md:text-[32px] border-4 border-solid pt-1 sm:pt-2 h-10 w-18 align-middle text-center border-sky-600 rounded-full">
+								<div className="basis-1/6 text-base md:mx-4 md:text-[32px] md:p-2 border-4 border-solid pt-1 sm:pt-2 h-10 w-18 align-middle text-center border-sky-600 rounded-full">
 									{opening.short}
 								</div>
 								<div className="basis-3/4">

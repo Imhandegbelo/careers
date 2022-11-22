@@ -17,6 +17,6 @@ export default Button;
 
 Button.propTypes = {
 	path: PropTypes.string.isRequired,
-	isPrimary: PropTypes.string.isRequired,
+	isPrimary: PropTypes.bool,
 	title: PropTypes.string.isRequired,
 };
