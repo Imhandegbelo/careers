@@ -52,7 +52,7 @@ const ProductData = [
 ];
 
 const Footer = () => (
-	<footer className="bg-[#D1E9FF] w-full flex flex-col md:flex-row justify-between py-[50px] xl:py-[100px] xl:pl-[110px] xl:pr-[307px] px-[44px]">
+	<footer className="bg-[#D1E9FF] w-full flex flex-col sm:flex-row sm:wrap md:flex-row justify-between py-[50px] xl:py-[100px] xl:pl-[110px] px-[44px]">
 		<div>
 			<img src={logo} alt="Company logo" />
 			<div className="pt-[4px] mb-[18px] w-[230px]">
