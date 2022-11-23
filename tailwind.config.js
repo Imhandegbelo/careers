@@ -7,7 +7,8 @@ module.exports = {
 				sans: ['Lexend', 'system-ui'],
 			},
 			backgroundImage: {
-				hero: "url('/src/assets/hero.png')",
+				'hero': "url('/src/assets/hero.png')",
+        'ellipse': "url('/src/assets/ellipse.png')",
 			},
     },
   },

@@ -21,7 +21,7 @@ function NavigationBar() {
     setNav(!nav);
   };
   return (
-    <nav className="w-full h-[48px] md:h-[96px] px-[44px] xl:px-[72px] flex items-center justify-between">
+    <nav className="w-full h-[48px] md:h-[96px] sm:px-2 md:px-[44px] xl:px-[72px] flex items-center justify-between">
       <Link to="/" key={uuid()}>
         <img
           src={logo}
@@ -67,22 +67,19 @@ function NavigationBar() {
         }
       >
         {navLinks.map((item) => (
-          //   <Link to={item.path} className="px-[30px]" key={uuid()}>
-          //     {item.name}
-          //   </Link>
-          <a href="#" className="px-[30px]">
+          <Link to={item.path} className="px-[30px]" key={uuid()}>
             {item.name}
-          </a>
+          </Link>
         ))}
 
         <p>Search</p>
 
-        <div className="flex items-center">
+        <div className="flex flex-row items-center">
           <BsGlobe2 size={24} />
           <MdOutlineKeyboardArrowDown size={24} />
         </div>
-        <Button title="Sign up" path="/" isPrimary />
-        <Button title="Sign in" path="/" />
+          <Button title="Sign up" path="/" isPrimary />
+          <Button title="Sign in" path="/" />
       </div>
     </nav>
   );
